@@ -1,0 +1,17 @@
+.navbar-container{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    opacity: 0.3;
+    transform: translateX(90%);
+    transition: all 0.3s ease-in-out;
+    width: 20vw;
+    background-color: rgba(28, 28, 28, 0.789);
+    box-shadow: -3px 0px 7px 1px rgba(28, 28, 28, 0.789);
+}
+
+.navbar-container:hover{
+    opacity: 1;
+    transform: translateX(0);
+}

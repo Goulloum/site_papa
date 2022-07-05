@@ -1,0 +1,17 @@
+.galerie-backoffice-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.form-galerie-backoffice-container{
+    width: 35%;
+    height: 100%;
+    background-color: aliceblue;
+}
+
+.all-galerie-backoffice-container{
+    width: 65%;
+    height: 100%;
+    background-color: red;
+}

@@ -2,7 +2,7 @@
     width: 100%;
     height: 100%;
     position: relative;
-background-color: whitesmoke;
+    background-color: floralwhite;
 }
 
 .message{
@@ -122,3 +122,8 @@ background-color: whitesmoke;
     align-items: center;
     justify-content: flex-end;
 }
+.place-galerie>a{
+    color: black;
+
+}
+

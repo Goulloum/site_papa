@@ -7,11 +7,174 @@
 .form-galerie-backoffice-container{
     width: 35%;
     height: 100%;
-    background-color: aliceblue;
+    background-color: whitesmoke;
+    overflow-y: auto;
+ 
 }
+.title-form-galerie-backoffice{
+    font-size: 2vw;
+    width: 100%;
+    margin: 2vh 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-galerie-backoffice{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.form-galerie-backoffice>*{
+    margin: 0.5vh 0;
+}
+
+.form-galerie-backoffice>input{
+    width: 90%;
+    font-size: 1.2vw;
+    padding: 0.5vh;
+
+}
+
+.form-galerie-backoffice>input[type=file]{
+    width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+
+
+
+.label-files-form-galerie{
+    width: 90%;
+    font-size: 1.2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: calc(0.5vh + 2px);
+}
+.label-files-form-galerie>div{
+    margin: 0.5vh 0;
+}
+
+.label-files-form-galerie>div:nth-child(1){
+    padding: 0.5vh 1vw;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(100% - 2vw);
+    transition: all 0.2s;
+    cursor: pointer;
+}
+.label-files-form-galerie>div:nth-child(1):hover{
+    transform: scale(1.05);
+}
+
+.label-files-form-galerie>div:nth-child(2){
+    padding: 1vh 1vw;
+    border: 2px solid black;
+    transition: all 0.4s ease-in-out;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.label-files-form-galerie>div:nth-child(2)>div{
+    font-size: 0.8vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.164);
+    margin: 1vh 0;
+    padding: 0.5vh;
+}
+
+.form-galerie-image-preview{
+    height: 10vh;
+}
+
+.form-galerie-backoffice>textarea{
+    width: 90%;
+    resize: none;
+    min-height: 20vh;
+    padding: 0.5vh;
+    font-size: 1.2vw;
+}
+
+.message-form-galerie{
+    width: calc(90% - 4vh);
+    margin: 1vh auto;
+    padding: 2vh;
+}
+
+
+
+
+
 
 .all-galerie-backoffice-container{
     width: 65%;
     height: 100%;
-    background-color: red;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    position: relative;
+    overflow-y: auto;
+    border-left: 4px black solid;
 }
+
+
+
+.galerie-element-backoffice-container{
+    width: calc(50% - 4px - 2%);
+    margin: 1%;
+    height: 30vh;
+    border: 2px black solid;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+.galerie-element-backoffice-container>img{
+    width: 100%;
+    max-height: calc(25vh - 2px);
+    object-fit: contain;
+}
+.galerie-element-backoffice-container>div{
+    width: 100%;
+    height: calc(5vh - 2px);
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.228);
+}
+
+
+.popup-modify-galerie-container{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.popup-modify-galerie{
+    width: 80%;
+    height: 80%;
+    background-color: whitesmoke;
+    box-shadow: 0 0 10px 3px black;
+    overflow-y: auto;
+}   

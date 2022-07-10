@@ -1,0 +1,124 @@
+.galerie-page-container{
+    width: 100%;
+    height: 100%;
+    position: relative;
+background-color: whitesmoke;
+}
+
+.message{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    font-size: 1.5vw;
+    background-color: black;
+    color: whitesmoke;
+}
+
+.galerie-page{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.photo-galerie-container{
+    width: 70%;
+    height: 100%;
+    /* box-shadow: 0 -3px 10px 1px rgba(0, 0, 0, 0.500); */
+    overflow-y: auto;
+
+}
+
+.meta-galerie-container{
+    width: 30%;
+    height: 100%;
+    /* background-color: rgba(0, 0, 0, 0.500); */
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.visu-main-photo-container{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.visu-main-photo{
+    width: 96%;
+    height: 96%;
+    object-fit: contain;
+    margin: 2%;
+}
+
+.all-photo-container{
+    min-height: 20vh;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.all-photo-container>img{
+    height: 10vh;
+    width: fit-content;
+    object-fit: contain;
+    margin: 1%;
+    transition: all 0.2s;
+    cursor: pointer;
+    
+}
+
+.list-meta-galerie{
+    list-style: none;
+    padding: 0 2vh 0 0 ;
+    margin: 0;
+}
+.list-meta-galerie>*{
+    margin: 2vh 0;
+
+}
+.title-galerie{
+    font-size: 2.2vw;
+    text-align: right;
+    font-family: 'Abril Fatface', cursive;
+    
+}
+
+.go-back-btn{
+    width: 90%;
+    background-color: rgba(105, 105, 35, 0.822);
+    padding: 2vh;
+    font-size: 1vw;
+    font-weight: 600;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    transition: all 0.2s;
+    border-radius: 5px;
+    margin: 2vh 0;
+
+}
+
+.go-back-btn:hover{
+    border-radius: 8px;
+}
+.meta-galerie-container>a{
+    color: inherit;
+    text-decoration: none;
+}
+.description-galerie{
+    text-align: justify;
+}
+.place-galerie{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}

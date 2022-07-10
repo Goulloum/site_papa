@@ -8,9 +8,9 @@
 
 
 
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
   width: 0 !important;
-}
+} */
 .home-container {
   overflow: -moz-scrollbars-none;
   -ms-overflow-style: none;

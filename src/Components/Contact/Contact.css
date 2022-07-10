@@ -1,0 +1,149 @@
+.contact-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact-title{
+    font-size: 2vw;
+    font-weight: 600;
+    margin: 2vh 0;
+    color: rgba(105, 105, 35, 0.822);
+    font-family: 'Abril Fatface', cursive;
+    letter-spacing: 3px;
+
+}
+
+.form-contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 40vw;
+}
+
+.form-contact>div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5vh 0;
+    width: 100%;
+    position: relative;
+    
+}
+.form-contact>div>div{
+    position: absolute;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    top: 0;
+    left: 100%;
+    font-size: 1vw;
+    width: fit-content;
+    box-shadow: none;
+    color: red;
+    padding: inherit 0;
+}
+.form-contact>div>*{
+    margin: 0 1vw;
+    width: 100%;
+    font-size: 1.5vw;
+    padding: 0.5vh 1vh;
+    box-shadow: 0 0 10px 2px black;
+    border: none;
+}
+
+.form-contact>div>textarea{
+    resize: none;
+    height: 30vh;
+    font-family: inherit;
+}
+
+.form-contact input:focus-visible, .form-contact textarea:focus-visible{
+    outline: none;
+}
+
+.form-contact>input[type=submit]{
+    width: 50%;
+    font-size: 2vw;
+    margin: 2vh 0;
+    background-color: rgba(105, 105, 35, 0.822);
+    border: none;
+    color: whitesmoke;
+    transition: transform 0.2s ease-in-out;
+    cursor: pointer;
+}
+.form-contact>input[type=submit]:hover{
+    transform: scale(1.1);
+}
+
+
+.message-form{
+    background-color: rgba(105, 105, 35, 0.822);
+    border-radius: 5px;
+    color: whitesmoke;
+    font-size: 1.2vw;
+    padding: 2vh;
+    margin-top: 3vh;
+    font-weight: 600;
+}
+
+/* LOADER CSS */
+.lds-ellipsis {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+  }
+  .lds-ellipsis div {
+    position: absolute;
+    top: 33px;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background: #000;
+    animation-timing-function: cubic-bezier(0, 1, 1, 0);
+  }
+  .lds-ellipsis div:nth-child(1) {
+    left: 8px;
+    animation: lds-ellipsis1 0.6s infinite;
+  }
+  .lds-ellipsis div:nth-child(2) {
+    left: 8px;
+    animation: lds-ellipsis2 0.6s infinite;
+  }
+  .lds-ellipsis div:nth-child(3) {
+    left: 32px;
+    animation: lds-ellipsis2 0.6s infinite;
+  }
+  .lds-ellipsis div:nth-child(4) {
+    left: 56px;
+    animation: lds-ellipsis3 0.6s infinite;
+  }
+  @keyframes lds-ellipsis1 {
+    0% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  @keyframes lds-ellipsis3 {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(0);
+    }
+  }
+  @keyframes lds-ellipsis2 {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(24px, 0);
+    }
+  }

@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
 
-function GaleriePage() {
+function GaleriePage({darkMode}) {
   const [galerie, setGalerie] = useState([]);
   const [loaded, setLoaded] = useState(false);
   const idGalerie = useParams().id;
@@ -35,7 +35,7 @@ function GaleriePage() {
   }, []);
 
   return (
-    <div className="galerie-page-container">
+    <div className={darkMode? "galerie-page-container dark": "galerie-page-container"}>
       {loaded && (
         <div className="galerie-page">
           <div className="photo-galerie-container">
@@ -58,16 +58,16 @@ function GaleriePage() {
             </div>
           </div>
           <div className="meta-galerie-container">
-            <ul className="list-meta-galerie">
+            <ul className={darkMode? "list-meta-galerie dark-text": "list-meta-galerie"}>
               <li className="title-galerie">{galerie.title}</li>
               <li className="description-galerie">{galerie.description}</li>
               {galerie.place !== "" && <li className="place-galerie">
                 <span className="material-symbols-outlined">map</span>
-                <a href={"https://www.google.com/maps/search/?api=1&query=" + galerie.place.replace(" ", "+")} target="__blank">{galerie.place}</a>
+                <a className={darkMode? "dark-text": ''} href={"https://www.google.com/maps/search/?api=1&query=" + galerie.place.replace(" ", "+")} target="__blank">{galerie.place}</a>
               </li>}
             </ul>
             <Link to="/galerie">
-              <div className="go-back-btn">
+              <div className={darkMode? "go-back-btn dark-text": "go-back-btn"}>
                 Galerie{" "}
                 <span className="material-symbols-outlined">arrow_forward</span>
               </div>

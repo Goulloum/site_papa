@@ -111,6 +111,22 @@
     transform: scale(1);
 }
 
+.dark-mode-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2vw;
+    background-color: whitesmoke;
+    border-radius: 50px;
+    color: black;
+    padding: 0.5vh 1vw;
+    margin-top: 3vh;
+}
+
+.dark-mode-toggle{
+    margin: 0 2vh;
+}
+
 
 
 

@@ -4,7 +4,7 @@ import axios from "axios";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
-function Galerie() {
+function Galerie({darkMode}) {
   const [galeries, setGaleries] = useState([]);
   const [loaded, setLoaded] = useState(false);
 
@@ -24,7 +24,7 @@ function Galerie() {
   }, []);
 
   return (
-    <div className="galerie-container">
+    <div className={darkMode? "galerie-container dark": "galerie-container"}>
       <div className="galerie-title-container">
         <div className="galerie-title">Galerie.</div>
       </div>

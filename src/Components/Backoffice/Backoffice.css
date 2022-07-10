@@ -12,6 +12,9 @@
   width: 100%;
   background-color: rgba(0, 0, 0, 0.204);
   height: 8vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .navbar-backoffice-container > ul {
   margin: 0;
@@ -19,6 +22,17 @@
   list-style: none;
   font-weight: 600;
   height: 100%;
+}
+.btn-sign-out{
+  width: fit-content;
+  background-color: rgba(0, 0, 0, 0.797);
+  color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 2vh;
+  padding: 0.5vh 0.5vw;
+  cursor: pointer;
 }
 
 .navbar-backoffice-container > ul > li {

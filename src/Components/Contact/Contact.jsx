@@ -3,7 +3,7 @@ import emailjs from "@emailjs/browser";
 
 import { useState, useEffect } from "react";
 
-function Contact() {
+function Contact({darkMode}) {
   const [verif, setVerif] = useState({
     nom: false,
     email: false,
@@ -78,7 +78,8 @@ function Contact() {
   }, [message])
 
   return (
-    <div className="contact-container">
+    <div className={darkMode? "contact-container dark": "contact-container"}>
+      <img src="/dynamicImg/HomeImg/bg_home.JPG" alt="" className="background-contact" />
       <div className="contact-title">Envoyez moi un message :</div>
       <form className="form-contact" onSubmit={(e) => handleSendEmail(e)}>
         <div>

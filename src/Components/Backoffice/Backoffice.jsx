@@ -1,9 +1,11 @@
 import './Backoffice.css'
 import GalerieBackoffice from './GalerieBackoffice/GalerieBackoffice'
 import React, {useState} from 'react'
+import {useSignOut} from 'react-auth-kit'
 
 function Backoffice(){
     const [currentPage, setCurrentPage] = useState("galerie")
+    const signOut = useSignOut();
 
     const componentList = {
         galerie: GalerieBackoffice
@@ -15,6 +17,7 @@ function Backoffice(){
                 <ul>
                     <li onClick={() => setCurrentPage("galerie")}>Galerie</li>
                 </ul>
+                <div className="btn-sign-out" onClick={() => signOut()}>Deconnexion</div>
             </div>
 
             <div className="component-backoffice-container">

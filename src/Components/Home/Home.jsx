@@ -7,6 +7,7 @@ function Home(){
             <img src={"dynamicImg/HomeImg/bg_home.JPG"} alt="Background Home" className='background-home'/>
 
             <Header />
+            
         </div>
     )
 }

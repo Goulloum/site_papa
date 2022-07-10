@@ -14,3 +14,10 @@ font-family: 'Gantari', sans-serif;
 
 */
 
+.dark{
+  background-color: rgba(0, 0, 0, 0.75)!important;
+  color: whitesmoke!important;
+}
+.dark-text{
+  color: whitesmoke!important;
+}
